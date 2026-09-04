@@ -1,69 +1,144 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-black text-white">
+      {/* Navigation */}
+      <nav className="flex items-center justify-between px-6 py-6 md:px-10">
+        <div className="text-sm font-medium tracking-[0.25em]">
+          AZ
+        </div>
+
+        <div className="flex gap-8 text-xs uppercase tracking-[0.2em] text-white/60">
+          <a href="#work" className="transition hover:text-white">
+            Work
+          </a>
+          <a href="#about" className="transition hover:text-white">
+            About
+          </a>
+          <a href="#contact" className="transition hover:text-white">
+            Contact
+          </a>
+        </div>
+      </nav>
+
+      {/* Hero */}
+      <section className="flex min-h-[85vh] flex-col justify-end px-6 pb-16 md:px-10 md:pb-20">
+        <p className="mb-6 text-xs uppercase tracking-[0.3em] text-white/50">
+          Photographer · Videographer · Filmmaker
+        </p>
+
+        <h1 className="max-w-6xl text-[15vw] font-medium leading-[0.8] tracking-[-0.06em] md:text-[11vw]">
+          AIMAN
+          <br />
+          ZHAFLY
+        </h1>
+
+        <div className="mt-10 flex max-w-xl justify-between text-sm text-white/50">
+          <p>
+            Visual storyteller
+            <br />
+            based in Malaysia.
+          </p>
+
+          <p className="text-right">
+            2026
+            <br />
+            Selected Works
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Work */}
+      <section id="work" className="px-6 py-24 md:px-10 md:py-32">
+        <div className="mb-16 flex items-end justify-between">
+          <h2 className="text-4xl tracking-tight md:text-6xl">
+            Selected Work
+          </h2>
+
+          <span className="text-xs uppercase tracking-[0.2em] text-white/40">
+            01 — 04
+          </span>
         </div>
-      </main>
-    </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <Project title="Automotive" number="01" />
+          <Project title="Commercial" number="02" />
+          <Project title="Photography" number="03" />
+          <Project title="Events" number="04" />
+        </div>
+      </section>
+
+      {/* About */}
+      <section
+        id="about"
+        className="border-t border-white/10 px-6 py-24 md:px-10 md:py-32"
+      >
+        <div className="grid gap-12 md:grid-cols-2">
+          <h2 className="text-4xl tracking-tight md:text-6xl">
+            About
+          </h2>
+
+          <div className="max-w-xl text-lg leading-relaxed text-white/60">
+            <p>
+              Aiman Zhafly is a photographer, videographer and
+              filmmaker based in Malaysia, working across commercial
+              productions, automotive, events and visual storytelling.
+            </p>
+
+            <p className="mt-6">
+              Currently developing his craft with a focus on
+              cinematography and becoming a Director of Photography.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section
+        id="contact"
+        className="px-6 py-24 md:px-10 md:py-32"
+      >
+        <p className="mb-6 text-xs uppercase tracking-[0.3em] text-white/40">
+          Get in touch
+        </p>
+
+        <a
+          href="mailto:your@email.com"
+          className="break-all text-[9vw] font-medium leading-none tracking-[-0.05em] transition hover:text-white/50"
+        >
+          LET&apos;S TALK
+        </a>
+
+        <div className="mt-16 border-t border-white/10 pt-6 text-xs uppercase tracking-[0.2em] text-white/40">
+          © 2026 Aiman Zhafly
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function Project({
+  title,
+  number,
+}: {
+  title: string;
+  number: string;
+}) {
+  return (
+    <a
+      href="#"
+      className="group relative flex aspect-[4/3] items-end overflow-hidden bg-zinc-900 p-6 transition md:p-8"
+    >
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+
+      <div className="relative z-10 flex w-full items-end justify-between">
+        <h3 className="text-3xl tracking-tight md:text-4xl">
+          {title}
+        </h3>
+
+        <span className="text-xs text-white/50">
+          {number}
+        </span>
+      </div>
+    </a>
   );
 }
