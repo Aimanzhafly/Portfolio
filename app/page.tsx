@@ -587,7 +587,7 @@ export default function Home() {
                 <br />
                 VIDEOGRAPHER
                 <br />
-                FILMMAKER
+                FILM CREW
               </p>
 
               <h3 className="mt-10 text-3xl font-medium leading-[0.95] tracking-[-0.05em] text-white md:text-4xl">
@@ -784,7 +784,7 @@ export default function Home() {
                     AVAILABLE FOR
                   </p>
                   <p className="mt-2 text-[10px] tracking-[0.18em] text-white">
-                    PHOTOGRAPHY · VIDEOGRAPHY · FILMMAKING
+                    PHOTOGRAPHY · VIDEOGRAPHY · FILM CREW
                   </p>
                 </div>
               </div>
