@@ -271,7 +271,7 @@ export default function Home() {
         {/* HERO CONTENT */}
         <div className="absolute bottom-28 left-6 z-10 max-w-3xl md:bottom-24 md:left-10">
           <p className="mb-5 text-[9px] tracking-[0.3em] text-white/70 md:text-xs md:tracking-[0.4em]">
-            PHOTOGRAPHER · VIDEOGRAPHER · FILMMAKER
+            PHOTOGRAPHER · VIDEOGRAPHER · FILM CREW
           </p>
 
           <img
@@ -797,7 +797,7 @@ export default function Home() {
       <footer className="border-t border-white/10 bg-black px-6 py-8 md:px-10">
         <div className="mx-auto flex max-w-[1600px] flex-col justify-between gap-4 text-[9px] tracking-[0.25em] text-white/30 md:flex-row">
           <span>© {new Date().getFullYear()} AIMAN ZHAFLY</span>
-          <span>PHOTOGRAPHER · VIDEOGRAPHER · FILMMAKER</span>
+          <span>PHOTOGRAPHER · VIDEOGRAPHER · FILM CREW</span>
         </div>
       </footer>
     </main>
